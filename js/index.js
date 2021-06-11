@@ -68,6 +68,9 @@ window.addEventListener('load', (event) => {
           memoryGame.pairsClicked;
         document.getElementById('pairs-guessed').innerText =
           memoryGame.pairsGuessed;
+        if (memoryGame.checkIfFinished()) {
+          alert('You won!!!');
+        }
       }
     });
   });
